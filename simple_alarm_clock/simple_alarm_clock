@@ -1,0 +1,19 @@
+import time
+
+def alarm_clock(alarm_time):
+    print(f"Alarm set for {alarm_time}")
+
+    while True:
+        current_time = time.strftime("%H:%M:%S")
+        print(f"Current Time: {current_time}", end="\r")
+
+        if current_time == alarm_time:
+            print("\n⏰ Wake up! Alarm ringing!")
+            break
+
+        time.sleep(1)
+
+
+# ===== MAIN PROGRAM =====
+alarm_time = input("Enter alarm time (HH:MM:SS): ")
+alarm_clock(alarm_time)
