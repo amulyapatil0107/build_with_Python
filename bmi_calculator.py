@@ -10,3 +10,5 @@ print("\nYour BMI is:", round(bmi, 2))
 # BMI Category
 if bmi < 18.5:
     print("Category: Underweight")
+elif bmi < 25:
+    print("Category: Normal weight")
