@@ -7,4 +7,6 @@ bmi = weight / (height ** 2)
 
 print("\nYour BMI is:", round(bmi, 2))
 
-
+# BMI Category
+if bmi < 18.5:
+    print("Category: Underweight")
