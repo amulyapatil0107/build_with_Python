@@ -21,3 +21,6 @@ elif choice == 3:
     kg = float(input("Enter weight in kilograms: "))
     pounds = kg * 2.20462
     print("Pounds:", round(pounds, 2))
+
+else:
+    print("Invalid choice")
