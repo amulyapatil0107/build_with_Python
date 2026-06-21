@@ -1,0 +1,15 @@
+from datetime import date
+
+birth_year = int(input("Enter birth year: "))
+birth_month = int(input("Enter birth month: "))
+birth_day = int(input("Enter birth day: "))
+
+today = date.today()
+
+age = today.year - birth_year
+
+# Check if birthday has happened this year
+if (today.month, today.day) < (birth_month, birth_day):
+    age -= 1
+
+print("Your age is:", age)
