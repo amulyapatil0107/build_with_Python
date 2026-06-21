@@ -17,3 +17,7 @@ elif choice == 2:
     fahrenheit = (celsius * 9/5) + 32
     print("Fahrenheit:", round(fahrenheit, 2))
 
+elif choice == 3:
+    kg = float(input("Enter weight in kilograms: "))
+    pounds = kg * 2.20462
+    print("Pounds:", round(pounds, 2))
