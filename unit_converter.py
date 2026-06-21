@@ -7,3 +7,7 @@ print("3. Kilograms to Pounds")
 
 choice = int(input("Enter your choice (1-3): "))
 
+if choice == 1:
+    km = float(input("Enter distance in kilometers: "))
+    miles = km * 0.621371
+    print("Miles:", round(miles, 2))
