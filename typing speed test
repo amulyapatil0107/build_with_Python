@@ -1,0 +1,30 @@
+# Typing Speed Test
+
+import time
+
+sentence = "Python is easy to learn"
+
+print("Type the following sentence:")
+print(sentence)
+
+input("Press Enter when ready...")
+
+start_time = time.time()
+
+typed = input("\nStart typing: ")
+
+end_time = time.time()
+
+time_taken = end_time - start_time
+
+words = len(sentence.split())
+
+wpm = (words / time_taken) * 60
+
+print("\nTime Taken:", round(time_taken, 2), "seconds")
+print("Typing Speed:", round(wpm, 2), "WPM")
+
+if typed == sentence:
+    print("Accuracy: 100%")
+else:
+    print("Typed sentence does not match exactly")
