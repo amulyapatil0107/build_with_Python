@@ -1,0 +1,10 @@
+import random
+
+quotes = [
+    "Believe in yourself.",
+    "Never give up.",
+    "Success comes from hard work.",
+    "Dream big and work hard.",
+    "Stay positive and happy."
+]
+
