@@ -20,6 +20,10 @@ while True:
         balance += amount
         print("Amount Deposited Successfully")
 
+     elif choice == "3":
+        amount = float(input("Enter amount to withdraw: "))
+
+
 
 
     
