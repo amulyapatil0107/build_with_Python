@@ -2,3 +2,7 @@
 
 import random
 
+while True:
+
+    input("\nPress Enter to roll the dice...")
+
