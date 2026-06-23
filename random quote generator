@@ -7,4 +7,20 @@ quotes = [
     "Dream big and work hard.",
     "Stay positive and happy."
 ]
+while True:
+    print("\n1. Generate Quote")
+    print("2. Exit")
+
+    choice = input("Enter choice: ")
+
+    if choice == "1":
+        print("\nQuote:")
+        print(random.choice(quotes))
+
+    elif choice == "2":
+        print("Goodbye!")
+        break
+
+    else:
+        print("Invalid Choice")
 
