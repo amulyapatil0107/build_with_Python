@@ -1,0 +1,29 @@
+# Currency Converter
+
+print("Currency Converter")
+print("1. INR to USD")
+print("2. USD to INR")
+print("3. INR to EUR")
+print("4. EUR to INR")
+
+choice = int(input("Enter your choice (1-4): "))
+amount = float(input("Enter amount: "))
+
+if choice == 1:
+    result = amount * 0.012
+    print("USD =", round(result, 2))
+
+elif choice == 2:
+    result = amount * 83.5
+    print("INR =", round(result, 2))
+
+elif choice == 3:
+    result = amount * 0.011
+    print("EUR =", round(result, 2))
+
+elif choice == 4:
+    result = amount * 90.5
+    print("INR =", round(result, 2))
+
+else:
+    print("Invalid Choice")
