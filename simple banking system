@@ -15,6 +15,11 @@ while True:
     if choice == "1":
         print("Current Balance:", balance)
 
+     elif choice == "2":
+        amount = float(input("Enter amount to deposit: "))
+        balance += amount
+        print("Amount Deposited Successfully")
+
 
 
     
