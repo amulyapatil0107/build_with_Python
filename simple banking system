@@ -23,6 +23,11 @@ while True:
      elif choice == "3":
         amount = float(input("Enter amount to withdraw: "))
 
+     if amount <= balance:
+            balance -= amount
+            print("Withdrawal Successful")
+
+
 
 
 
