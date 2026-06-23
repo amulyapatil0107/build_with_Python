@@ -27,6 +27,16 @@ while True:
             balance -= amount
             print("Withdrawal Successful")
 
+      else:
+            print("Insufficient Balance")
+
+    elif choice == "4":
+        print("Thank You for Using the Bank System")
+        break
+
+    else:
+        print("Invalid Choice")
+
 
 
 
