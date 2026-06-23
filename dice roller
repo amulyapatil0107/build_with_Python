@@ -6,3 +6,7 @@ while True:
 
     input("\nPress Enter to roll the dice...")
 
+    dice = random.randint(1, 6)
+
+    
+
