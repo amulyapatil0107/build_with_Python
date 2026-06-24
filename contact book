@@ -34,6 +34,17 @@ while True:
         else:
             print("No Contacts Found")
 
+     # Search Contact
+    elif choice == "3":
+        search = input("Enter name to search: ")
+
+        if search in contacts:
+            print(search, ":", contacts[search])
+
+        else:
+            print("Contact Not Found")
+
+
 
 
 
