@@ -11,3 +11,6 @@ while True:
     print("4. Delete Contact")
     print("5. Exit")
 
+    choice = input("Enter your choice: ")
+
+
