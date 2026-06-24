@@ -55,6 +55,15 @@ while True:
         else:
             print("Contact Not Found")
 
+     # Exit
+    elif choice == "5":
+        print("Exiting Contact Book")
+        break
+
+    else:
+        print("Invalid Choice")
+
+
 
 
 
