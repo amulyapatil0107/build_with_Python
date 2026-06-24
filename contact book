@@ -13,4 +13,14 @@ while True:
 
     choice = input("Enter your choice: ")
 
+    # Add Contact
+    if choice == "1":
+        name = input("Enter name: ")
+        number = input("Enter phone number: ")
+
+        contacts[name] = number
+
+        print("Contact Added Successfully")
+
+
 
