@@ -44,6 +44,18 @@ while True:
         else:
             print("Contact Not Found")
 
+    # Delete Contact
+    elif choice == "4":
+        delete = input("Enter name to delete: ")
+
+        if delete in contacts:
+            del contacts[delete]
+            print("Contact Deleted")
+
+        else:
+            print("Contact Not Found")
+
+
 
 
 
