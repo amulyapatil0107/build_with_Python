@@ -55,3 +55,15 @@ while True:
         else:
             print("No Notes to Delete")
 
+# Save Notes to File
+    elif choice == "4":
+
+        file = open("notes.txt", "w")
+
+        for note in notes:
+            file.write(note + "\n")
+
+        file.close()
+
+        print("Notes Saved to notes.txt")
+
