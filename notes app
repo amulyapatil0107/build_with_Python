@@ -67,3 +67,12 @@ while True:
 
         print("Notes Saved to notes.txt")
 
+ # Exit
+    elif choice == "5":
+        print("Exiting Notes App")
+        break
+
+    else:
+        print("Invalid Choice")
+
+
