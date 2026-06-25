@@ -10,3 +10,5 @@ while True:
     print("3. Delete Note")
     print("4. Save Notes to File")
     print("5. Exit")
+
+ choice = input("Enter your choice: ")
