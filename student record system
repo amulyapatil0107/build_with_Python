@@ -14,3 +14,14 @@ while True:
     print("7. Exit")
 
 choice = input("Enter your choice: ")
+
+# Add Student
+    if choice == "1":
+        name = input("Enter student name: ")
+        marks = input("Enter marks: ")
+
+        students[name] = marks
+
+        print("Student Added Successfully")
+
+    
