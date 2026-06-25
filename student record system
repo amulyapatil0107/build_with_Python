@@ -36,5 +36,58 @@ choice = input("Enter your choice: ")
         else:
             print("No Records Found")
 
+# Search Student
+    elif choice == "3":
+        search = input("Enter student name: ")
 
-    
+        if search in students:
+            print(search, "Marks:", students[search])
+
+        else:
+            print("Student Not Found")
+
+    # Update Marks
+    elif choice == "4":
+        update = input("Enter student name: ")
+
+        if update in students:
+            new_marks = input("Enter new marks: ")
+
+            students[update] = new_marks
+
+            print("Marks Updated Successfully")
+
+        else:
+            print("Student Not Found")
+
+    # Delete Student
+    elif choice == "5":
+        delete = input("Enter student name: ")
+
+        if delete in students:
+            del students[delete]
+
+            print("Student Deleted Successfully")
+
+        else:
+            print("Student Not Found")
+
+    # Save to File
+    elif choice == "6":
+
+        file = open("students.txt", "w")
+
+        for name, marks in students.items():
+            file.write(name + " : " + marks + "\n")
+
+        file.close()
+
+        print("Records Saved to students.txt")
+
+    # Exit
+    elif choice == "7":
+        print("Exiting Program")
+        break
+
+    else:
+        print("Invalid Choice")
