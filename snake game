@@ -38,4 +38,19 @@ def draw_snake(snake_block, snake_list):
     for x in snake_list:
         pygame.draw.rect(screen, green, [x[0], x[1], snake_block, snake_block])
 
+# Main game function
+def game():
+
+    game_over = False
+    game_close = False
+
+    x = width / 2
+    y = height / 2
+
+    x_change = 0
+    y_change = 0
+
+    snake_list = []
+    snake_length = 1
+
 
