@@ -32,3 +32,26 @@ while True:
 
         else:
             print("No Notes Available")
+
+ # Delete Note
+    elif choice == "3":
+
+        if notes:
+
+            for i, note in enumerate(notes, start=1):
+                print(i, ".", note)
+
+            delete = int(input("Enter note number to delete: "))
+
+            if 1 <= delete <= len(notes):
+
+                removed = notes.pop(delete - 1)
+
+                print("Deleted Note:", removed)
+
+            else:
+                print("Invalid Number")
+
+        else:
+            print("No Notes to Delete")
+
