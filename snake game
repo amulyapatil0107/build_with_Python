@@ -134,5 +134,21 @@ def game():
 
         pygame.display.update()
 
-        # Food collision
+# Food collision
+        if x == food_x and y == food_y:
+
+            food_x = round(random.randrange(0, width - snake_block) / 10.0) * 10.0
+            food_y = round(random.randrange(0, height - snake_block) / 10.0) * 10.0
+
+            snake_length += 1
+
+        clock.tick(snake_speed)
+
+    pygame.quit()
+    quit()
+
+# Start game
+game()
+
+
       
