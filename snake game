@@ -32,3 +32,10 @@ def show_score(score):
     value = font.render("Score: " + str(score), True, black)
     screen.blit(value, [10, 10])
 
+# Function to draw snake
+def draw_snake(snake_block, snake_list):
+
+    for x in snake_list:
+        pygame.draw.rect(screen, green, [x[0], x[1], snake_block, snake_block])
+
+
