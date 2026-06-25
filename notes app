@@ -1,0 +1,12 @@
+# Notes App
+
+notes = []
+
+while True:
+
+    print("\n--- NOTES APP ---")
+    print("1. Add Note")
+    print("2. View Notes")
+    print("3. Delete Note")
+    print("4. Save Notes to File")
+    print("5. Exit")
