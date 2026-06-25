@@ -103,4 +103,24 @@ def game():
                     y_change = snake_block
                     x_change = 0
 
+ # Border collision
+        if x >= width or x < 0 or y >= height or y < 0:
+            game_close = True
+
+        x += x_change
+        y += y_change
+
+        screen.fill(white)
+
+        pygame.draw.rect(screen, red, [food_x, food_y, snake_block, snake_block])
+
+        snake_head = []
+        snake_head.append(x)
+        snake_head.append(y)
+
+        snake_list.append(snake_head)
+
+        if len(snake_list) > snake_length:
+            del snake_list[0]
+
       
