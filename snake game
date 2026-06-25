@@ -27,4 +27,8 @@ clock = pygame.time.Clock()
 
 font = pygame.font.SysFont(None, 35)
 
-font = pygame.font.SysFont(None, 35)
+# Function to display score
+def show_score(score):
+    value = font.render("Score: " + str(score), True, black)
+    screen.blit(value, [10, 10])
+
