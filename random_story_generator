@@ -1,0 +1,24 @@
+import random
+
+characters = ["A pirate", "A scientist", "A ninja", "A magician"]
+
+places = ["in a jungle", "on the moon", "inside a castle", "under the ocean"]
+
+events = ["found a secret map", "fought a monster", "invented a machine", "saved a kingdom"]
+
+while True:
+
+    character = random.choice(characters)
+    place = random.choice(places)
+    event = random.choice(events)
+
+    story = f"{character} {place} and {event}."
+
+    print("\nGenerated Story:")
+    print(story)
+
+    choice = input("\nGenerate another story? (yes/no): ").lower()
+
+    if choice != "yes":
+        print("Goodbye!")
+        break
