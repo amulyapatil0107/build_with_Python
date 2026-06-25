@@ -24,4 +24,17 @@ choice = input("Enter your choice: ")
 
         print("Student Added Successfully")
 
+# View Students
+    elif choice == "2":
+
+        if students:
+            print("\nStudent Records:")
+
+            for name, marks in students.items():
+                print(name, ":", marks)
+
+        else:
+            print("No Records Found")
+
+
     
