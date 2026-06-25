@@ -1,0 +1,61 @@
+# Sticky Notes App
+
+notes = []
+
+while True:
+
+    print("\n--- STICKY NOTES APP ---")
+    print("1. Add Note")
+    print("2. View Notes")
+    print("3. Delete Note")
+    print("4. Exit")
+
+    choice = input("Enter your choice: ")
+
+    # Add Note
+    if choice == "1":
+        note = input("Enter your note: ")
+
+        notes.append(note)
+
+        print("Note Added Successfully")
+
+    # View Notes
+    elif choice == "2":
+
+        if notes:
+            print("\nYour Notes:")
+
+            for i, note in enumerate(notes, start=1):
+                print(i, ".", note)
+
+        else:
+            print("No Notes Available")
+
+    # Delete Note
+    elif choice == "3":
+
+        if notes:
+            for i, note in enumerate(notes, start=1):
+                print(i, ".", note)
+
+            delete = int(input("Enter note number to delete: "))
+
+            if 1 <= delete <= len(notes):
+                removed = notes.pop(delete - 1)
+
+                print("Deleted Note:", removed)
+
+            else:
+                print("Invalid Number")
+
+        else:
+            print("No Notes to Delete")
+
+    # Exit
+    elif choice == "4":
+        print("Exiting Sticky Notes App")
+        break
+
+    else:
+        print("Invalid Choice")
