@@ -20,3 +20,15 @@ while True:
         notes.append(note)
 
         print("Note Added Successfully")
+
+  # View Notes
+    elif choice == "2":
+
+        if notes:
+            print("\nYour Notes:")
+
+            for i, note in enumerate(notes, start=1):
+                print(i, ".", note)
+
+        else:
+            print("No Notes Available")
