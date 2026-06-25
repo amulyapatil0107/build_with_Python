@@ -123,4 +123,16 @@ def game():
         if len(snake_list) > snake_length:
             del snake_list[0]
 
+ # Self collision
+        for segment in snake_list[:-1]:
+            if segment == snake_head:
+                game_close = True
+
+        draw_snake(snake_block, snake_list)
+
+        show_score(snake_length - 1)
+
+        pygame.display.update()
+
+        # Food collision
       
