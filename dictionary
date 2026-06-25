@@ -1,0 +1,54 @@
+# Dictionary App
+
+dictionary = {
+    "python": "A popular programming language",
+    "computer": "An electronic device",
+    "keyboard": "An input device used for typing",
+    "internet": "A global network connection"
+}
+
+while True:
+
+    print("\n--- DICTIONARY APP ---")
+    print("1. Search Word")
+    print("2. Add New Word")
+    print("3. View All Words")
+    print("4. Exit")
+
+    choice = input("Enter your choice: ")
+
+    # Search Word
+    if choice == "1":
+        word = input("Enter word to search: ").lower()
+
+        if word in dictionary:
+            print(word, ":", dictionary[word])
+
+        else:
+            print("Word Not Found")
+
+    # Add New Word
+    elif choice == "2":
+        word = input("Enter new word: ").lower()
+
+        meaning = input("Enter meaning: ")
+
+        dictionary[word] = meaning
+
+        print("Word Added Successfully")
+
+    # View All Words
+    elif choice == "3":
+
+        print("\nDictionary Words:")
+
+        for word, meaning in dictionary.items():
+            print(word, ":", meaning)
+
+    # Exit
+    elif choice == "4":
+        print("Exiting Dictionary App")
+        break
+
+    else:
+        print("Invalid Choice")
