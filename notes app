@@ -12,3 +12,11 @@ while True:
     print("5. Exit")
 
  choice = input("Enter your choice: ")
+
+ # Add Note
+    if choice == "1":
+        note = input("Enter your note: ")
+
+        notes.append(note)
+
+        print("Note Added Successfully")
