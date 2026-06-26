@@ -7,3 +7,8 @@ import datetime
 
 # Initialize voice engine
 engine = pyttsx3.init()
+
+# Function to speak
+def speak(text):
+    engine.say(text)
+    engine.runAndWait()
