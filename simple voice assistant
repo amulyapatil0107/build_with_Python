@@ -40,6 +40,11 @@ while True:
 
     command = take_command()
 
+    # Open YouTube
+    if "youtube" in command:
+        speak("Opening YouTube")
+        webbrowser.open("https://www.youtube.com")
+
 
         return command.lower()
 
