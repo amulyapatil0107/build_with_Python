@@ -33,6 +33,14 @@ def take_command():
 
         print("You said:", command)
 
+# Start assistant
+speak("Hello, I am your voice assistant")
+
+while True:
+
+    command = take_command()
+
+
         return command.lower()
 
     except:
