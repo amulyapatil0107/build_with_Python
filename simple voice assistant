@@ -33,6 +33,12 @@ def take_command():
 
         print("You said:", command)
 
+        return command.lower()
+
+    except:
+        print("Sorry, could not understand")
+        return ""
+
 # Start assistant
 speak("Hello, I am your voice assistant")
 
@@ -45,9 +51,25 @@ while True:
         speak("Opening YouTube")
         webbrowser.open("https://www.youtube.com")
 
+    # Open Google
+    elif "google" in command:
+        speak("Opening Google")
+        webbrowser.open("https://www.google.com")
 
-        return command.lower()
+    # Tell time
+    elif "time" in command:
+        time = datetime.datetime.now().strftime("%H:%M:%S")
 
-    except:
-        print("Sorry, could not understand")
-        return ""
+        speak("Current time is " + time)
+
+        print(time)
+
+    # Exit
+    elif "exit" in command or "stop" in command:
+        speak("Goodbye")
+        break
+
+    else:
+        speak("Command not recognized")
+
+    
