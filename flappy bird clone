@@ -87,6 +87,16 @@ def check_collision(pipes):
 
     return False
 
+# Main game loop
+running = True
+
+pipe_timer = 0
+
+while running:
+
+    screen.fill(blue)
+
+
 
 
 
