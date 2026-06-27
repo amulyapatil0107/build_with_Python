@@ -37,5 +37,10 @@ pipe_speed = 4
 
 pipes = []
 
+# Font
+font = pygame.font.SysFont(None, 40)
+
+score = 0
+
 
 
