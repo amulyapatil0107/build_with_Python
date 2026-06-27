@@ -114,6 +114,26 @@ while running:
 
     pygame.draw.circle(screen, yellow, (bird_x, int(bird_y)), bird_radius)
 
+    # Pipes
+    pipe_timer += 1
+
+    if pipe_timer > 90:
+
+        pipes.append(create_pipe())
+
+        pipe_timer = 0
+
+    new_pipes = []
+
+    for top, bottom in pipes:
+
+        top.x -= pipe_speed
+        bottom.x -= pipe_speed
+
+        if top.x + pipe_width > 0:
+            new_pipes.append((top, bottom))
+
+
 
 
 
