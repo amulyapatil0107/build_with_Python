@@ -1,0 +1,4 @@
+# Flappy Bird Clone
+
+import pygame
+import random
