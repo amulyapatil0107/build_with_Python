@@ -19,3 +19,6 @@ blue = (135, 206, 235)
 green = (0, 255, 0)
 yellow = (255, 255, 0)
 
+# Clock
+clock = pygame.time.Clock()
+
