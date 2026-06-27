@@ -58,5 +58,15 @@ def create_pipe():
 
     return top_pipe, bottom_pipe
 
+# Draw pipes
+def draw_pipes(pipes):
+
+    for top, bottom in pipes:
+
+        pygame.draw.rect(screen, green, top)
+
+        pygame.draw.rect(screen, green, bottom)
+
+
 
 
