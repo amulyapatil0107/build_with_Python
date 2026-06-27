@@ -107,6 +107,14 @@ while running:
             if event.key == pygame.K_SPACE:
                 bird_movement = -8
 
+    # Bird movement
+    bird_movement += gravity
+
+    bird_y += bird_movement
+
+    pygame.draw.circle(screen, yellow, (bird_x, int(bird_y)), bird_radius)
+
+
 
 
 
