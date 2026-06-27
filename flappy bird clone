@@ -133,6 +133,39 @@ while running:
         if top.x + pipe_width > 0:
             new_pipes.append((top, bottom))
 
+         # Score
+        if top.x == bird_x:
+            score += 1
+
+    pipes = new_pipes
+
+    draw_pipes(pipes)
+
+    # Display score
+    score_text = font.render("Score: " + str(score), True, white)
+
+    screen.blit(score_text, (20, 20))
+
+    # Collision
+    if check_collision(pipes):
+
+        game_over = font.render("GAME OVER", True, white)
+
+        screen.blit(game_over, (150, 300))
+
+        pygame.display.update()
+
+        pygame.time.delay(2000)
+
+        running = False
+
+    pygame.display.update()
+
+    clock.tick(60)
+
+pygame.quit()
+
+
 
 
 
