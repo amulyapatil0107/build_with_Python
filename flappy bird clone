@@ -22,3 +22,12 @@ yellow = (255, 255, 0)
 # Clock
 clock = pygame.time.Clock()
 
+# Bird
+bird_x = 100
+bird_y = 300
+bird_radius = 20
+
+gravity = 0.5
+bird_movement = 0
+
+
