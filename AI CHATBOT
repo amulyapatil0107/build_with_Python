@@ -7,4 +7,8 @@ while True:
 
     user = input("You: ").lower()
 
+    # Greetings
+    if user == "hello" or user == "hi":
+        print("Bot: Hello! How are you?")
+
 
