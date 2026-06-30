@@ -15,4 +15,13 @@ while True:
     elif "your name" in user:
         print("Bot: I am a simple AI chatbot.")
 
+     # Asking time
+    elif "time" in user:
+
+        import time
+
+        current_time = time.strftime("%H:%M:%S")
+
+        print("Bot: Current time is", current_time)
+
 
