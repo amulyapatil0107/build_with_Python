@@ -105,4 +105,19 @@ while running:
     # Draw center line
     pygame.draw.aaline(screen, white, (400, 0), (400, 600))
 
+    # Display score
+    left_text = font.render(str(left_score), True, white)
+
+    right_text = font.render(str(right_score), True, white)
+
+    screen.blit(left_text, (200, 20))
+
+    screen.blit(right_text, (580, 20))
+
+    pygame.display.update()
+
+    clock.tick(60)
+
+pygame.quit()
+
 
