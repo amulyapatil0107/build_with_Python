@@ -80,6 +80,7 @@ while running:
     if ball.top <= 0 or ball.bottom >= height:
         ball_speed_y *= -1
 
-
-
+    # Paddle collision
+    if ball.colliderect(left_paddle) or ball.colliderect(right_paddle):
+        ball_speed_x *= -1
 
