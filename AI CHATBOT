@@ -33,4 +33,8 @@ while True:
         print("Bot: Goodbye!")
         break
 
+    # Default reply
+    else:
+        print("Bot: Sorry, I don't understand.")
+
 
