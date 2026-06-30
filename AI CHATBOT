@@ -28,5 +28,9 @@ while True:
     elif "python" in user:
         print("Bot: Python is a popular programming language.")
 
+    # Goodbye
+    elif user == "bye":
+        print("Bot: Goodbye!")
+        break
 
 
