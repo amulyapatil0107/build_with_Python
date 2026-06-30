@@ -84,3 +84,13 @@ while running:
     if ball.colliderect(left_paddle) or ball.colliderect(right_paddle):
         ball_speed_x *= -1
 
+    # Score update
+    if ball.left <= 0:
+        right_score += 1
+
+        ball.center = (400, 300)
+
+    if ball.right >= width:
+        left_score += 1
+
+        ball.center = (400, 300)
