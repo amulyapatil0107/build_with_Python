@@ -13,4 +13,9 @@ emoji_dictionary = {
 
 sentence = input("Enter a sentence: ").lower()
 
+words = sentence.split()
+
+translated = ""
+
+
 
