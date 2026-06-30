@@ -94,3 +94,11 @@ while running:
         left_score += 1
 
         ball.center = (400, 300)
+
+    # Draw paddles and ball
+    pygame.draw.rect(screen, white, left_paddle)
+
+    pygame.draw.rect(screen, white, right_paddle)
+
+    pygame.draw.ellipse(screen, white, ball)
+
