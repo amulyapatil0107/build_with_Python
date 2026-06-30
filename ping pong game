@@ -1,3 +1,6 @@
 # Ping Pong Game
 
 import pygame
+
+# Initialize pygame
+pygame.init()
