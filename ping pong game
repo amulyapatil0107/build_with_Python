@@ -72,5 +72,14 @@ while running:
     if keys[pygame.K_DOWN] and right_paddle.bottom < height:
         right_paddle.y += paddle_speed
 
+    # Ball movement
+    ball.x += ball_speed_x
+    ball.y += ball_speed_y
+
+    # Wall collision
+    if ball.top <= 0 or ball.bottom >= height:
+        ball_speed_y *= -1
+
+
 
 
