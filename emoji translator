@@ -11,3 +11,6 @@ emoji_dictionary = {
     "sleep": "😴"
 }
 
+sentence = input("Enter a sentence: ").lower()
+
+
