@@ -22,6 +22,12 @@ for word in words:
     if word in emoji_dictionary:
         translated += emoji_dictionary[word] + " "
 
+    else:
+        translated += word + " "
+
+print("\nEmoji Translation:")
+print(translated)
+
 
 
 
