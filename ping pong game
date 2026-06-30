@@ -42,4 +42,11 @@ right_score = 0
 
 font = pygame.font.SysFont(None, 50)
 
+# Game loop
+running = True
+
+while running:
+
+    screen.fill(black)
+
 
