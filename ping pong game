@@ -49,4 +49,10 @@ while running:
 
     screen.fill(black)
 
+    # Events
+    for event in pygame.event.get():
+
+        if event.type == pygame.QUIT:
+            running = False
+
 
