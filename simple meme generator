@@ -1,0 +1,10 @@
+# Simple Meme Generator
+
+top_text = input("Enter top text: ")
+bottom_text = input("Enter bottom text: ")
+
+print("\n--- GENERATED MEME ---\n")
+
+print(top_text.upper())
+print("😎 😎 😎 😎 😎")
+print(bottom_text.upper())
