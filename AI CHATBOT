@@ -11,4 +11,8 @@ while True:
     if user == "hello" or user == "hi":
         print("Bot: Hello! How are you?")
 
+    # Asking name
+    elif "your name" in user:
+        print("Bot: I am a simple AI chatbot.")
+
 
