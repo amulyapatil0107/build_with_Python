@@ -2,3 +2,9 @@
 
 print("AI Chatbot")
 print("Type 'bye' to exit\n")
+
+while True:
+
+    user = input("You: ").lower()
+
+
