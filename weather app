@@ -1,1 +1,13 @@
 # Simple Weather App
+
+import requests
+
+city = input("Enter city name: ")
+
+api_key = "YOUR_API_KEY"
+
+url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
+
+response = requests.get(url)
+
+data = response.json()
