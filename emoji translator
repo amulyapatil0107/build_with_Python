@@ -17,5 +17,11 @@ words = sentence.split()
 
 translated = ""
 
+for word in words:
+
+    if word in emoji_dictionary:
+        translated += emoji_dictionary[word] + " "
+
+
 
 
