@@ -102,3 +102,7 @@ while running:
 
     pygame.draw.ellipse(screen, white, ball)
 
+    # Draw center line
+    pygame.draw.aaline(screen, white, (400, 0), (400, 600))
+
+
