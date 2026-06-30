@@ -58,4 +58,8 @@ while running:
     # Key controls
     keys = pygame.key.get_pressed()
 
+    # Left paddle
+    if keys[pygame.K_w] and left_paddle.top > 0:
+        left_paddle.y -= paddle_speed
+
 
