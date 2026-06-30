@@ -1,0 +1,13 @@
+# Emoji Translator
+
+emoji_dictionary = {
+    "happy": "😊",
+    "sad": "😢",
+    "love": "❤️",
+    "fire": "🔥",
+    "cool": "😎",
+    "angry": "😡",
+    "laugh": "😂",
+    "sleep": "😴"
+}
+
