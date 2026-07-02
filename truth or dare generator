@@ -9,3 +9,14 @@ truths = [
     "Who is your crush?",
     "What secret have you never told anyone?"
 ]
+
+dares = [
+    "Sing a song loudly.",
+    "Do 10 pushups.",
+    "Dance for 30 seconds.",
+    "Speak in a funny voice for 1 minute.",
+    "Act like a cat for 20 seconds."
+]
+
+
+
