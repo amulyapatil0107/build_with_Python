@@ -33,11 +33,20 @@ while True:
         print("\nTruth:")
         print(random.choice(truths))
 
-     # Dare
+    # Dare
     elif choice == "2":
 
         print("\nDare:")
         print(random.choice(dares))
+
+     # Exit
+    elif choice == "3":
+
+        print("Game Ended")
+        break
+
+    else:
+        print("Invalid Choice")
 
 
 
