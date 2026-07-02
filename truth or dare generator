@@ -1,1 +1,11 @@
 # Truth or Dare Generator
+
+import random
+
+truths = [
+    "What is your biggest fear?",
+    "Have you ever lied to your best friend?",
+    "What is your most embarrassing moment?",
+    "Who is your crush?",
+    "What secret have you never told anyone?"
+]
