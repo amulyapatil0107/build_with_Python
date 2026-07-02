@@ -33,3 +33,11 @@ while True:
         print("\nTruth:")
         print(random.choice(truths))
 
+     # Dare
+    elif choice == "2":
+
+        print("\nDare:")
+        print(random.choice(dares))
+
+
+
