@@ -18,5 +18,13 @@ dares = [
     "Act like a cat for 20 seconds."
 ]
 
+while True:
+
+    print("\n--- TRUTH OR DARE ---")
+    print("1. Truth")
+    print("2. Dare")
+    print("3. Exit")
+
+    choice = input("Enter your choice: ")
 
 
